@@ -1,0 +1,39 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "env": {
+        "browser": true,
+        "serviceWorker": true
+    },
+    "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "promise"],
+    "categories": {
+        "correctness": "deny",
+        "perf": "error",
+        "suspicious": "warn"
+    },
+    "ignorePatterns": ["public/**"],
+    "rules": {
+        "import/no-unassigned-import": ["error", { "allow": ["**/*.css"] }]
+    },
+    "settings": {
+        "vitest": {
+            "typecheck": true
+        }
+    },
+    "options": {
+        "typeAware": true,
+        "typeCheck": true,
+        "reportUnusedDisableDirectives": "error"
+    },
+    "overrides": [
+        {
+            "files": ["*.test.*", "*.spec.*"],
+            "plugins": ["vitest"],
+            "env": {
+                "vitest": true
+            },
+            "rules": {
+                "vitest/no-importing-vitest-globals": "off"
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
+    "printWidth": 120,
+    "tabWidth": 4,
+    "ignorePatterns": ["public/**"],
+    "experimentalSortImports": null, // We use biome linter for that
+    "experimentalSortPackageJson": {
+        "sortScripts": true
+    }
+}

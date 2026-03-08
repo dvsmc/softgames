@@ -1,0 +1,62 @@
+{
+    "name": "softgames",
+    "version": "1.0.0",
+    "private": true,
+    "description": "softgames",
+    "license": "UNLICENSED",
+    "author": "dvsmc<dvsmc@pm.me>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dvsmc/softgames.git"
+    },
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "yarn lint:ts && yarn lint:oxlint && yarn lint:oxfmt && yarn lint:biome",
+        "lint:biome": "biome check",
+        "lint:biome:fix": "biome check --write --unsafe",
+        "lint:fix": "yarn lint:oxlint:fix; yarn lint:oxfmt:fix; yarn lint:biome:fix",
+        "lint:oxfmt": "oxfmt --check",
+        "lint:oxfmt:fix": "oxfmt",
+        "lint:oxlint": "oxlint ./src/",
+        "lint:oxlint:fix": "oxlint --fix --fix-suggestions ./src/",
+        "lint:ts": "tsc --skipLibCheck --noEmit",
+        "preview": "vite preview",
+        "test": "vitest"
+    },
+    "dependencies": {
+        "gsap": "^3.14.2",
+        "pixi.js": "^8.17.0",
+        "preact": "^10.29.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.4.6",
+        "@preact/preset-vite": "^2.10.3",
+        "@testing-library/jest-dom": "^6.9.1",
+        "@testing-library/preact": "^3.2.4",
+        "@types/jsdom": "^28",
+        "@types/node": "^25.4.0",
+        "@types/react": "^19.2.14",
+        "jsdom": "^28.1.0",
+        "oxfmt": "^0.38.0",
+        "oxlint": "^1.53.0",
+        "oxlint-tsgolint": "^0.16.0",
+        "typescript": "^5.9.3",
+        "vite": "^8.0.0-beta.18",
+        "vite-tsconfig-paths": "^6.1.1",
+        "vitest": "^4.1.0-beta.6"
+    },
+    "browserslist": [
+        "defaults",
+        "ie >= 11",
+        "> 0.5%",
+        "last 4 versions"
+    ],
+    "engines": {
+        "node": ">=22",
+        "npm": ">=9",
+        "yarn": ">=4"
+    },
+    "packageManager": "yarn@4.12.0"
+}

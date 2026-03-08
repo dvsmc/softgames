@@ -1,0 +1,30 @@
+{
+    "frames": {
+        "flames1": {
+            "frame": { "x": 0, "y": 0, "w": 256, "h": 256 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+            "sourceSize": { "w": 256, "h": 256 }
+        },
+        "flames2": {
+            "frame": { "x": 256, "y": 0, "w": 256, "h": 256 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+            "sourceSize": { "w": 256, "h": 256 }
+        },
+        "flames3": {
+            "frame": { "x": 0, "y": 256, "w": 256, "h": 256 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+            "sourceSize": { "w": 256, "h": 256 }
+        },
+        "flames4": {
+            "frame": { "x": 256, "y": 256, "w": 256, "h": 256 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+            "sourceSize": { "w": 256, "h": 256 }
+        }
+    },
+    "meta": {
+        "image": "flames.webp",
+        "format": "RGBA8888",
+        "size": { "w": 512, "h": 512 },
+        "scale": "1"
+    }
+}
